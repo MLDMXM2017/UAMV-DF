@@ -77,7 +77,7 @@ def get_config(view_num): # 无关内容要处理掉
     config["train_evaluation"] = f1_macro  ##f1_binary,f1_macro,f1_micro,accuracy
 
     config["uncertainty_threshold"]=0.15
-    config["clf_name"]='mlp' #  "catboost" / "svc" / "xgboost" / "adaboost" / "lgbm" / "guassianNB" / "knn" /"gradientBoost" / "mlp"
+    config["clf_name"]='catboost' #  "catboost" / "svc" / "xgboost" / "adaboost" / "lgbm" / "guassianNB" / "knn" /"gradientBoost" / "mlp"
 
     config["estimator_configs"] = []
     num_jobs = 30
